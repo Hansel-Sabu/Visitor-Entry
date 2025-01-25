@@ -1,21 +1,12 @@
 import React from 'react'
+import NavbarHome from './NavbarHome'
 
 const Admin = () => {
   return (
     <div>
-        /*Admin page
-        separate Navbar
-        Login
-        Add
-        Search
-        View
-        Remove
-        ViewDailyLogs
-        SearchDailyLogs
-        ChangePass
-        Stats
-        LogOut*/
+      <NavbarHome/>
 
+      Admin Login page
 
     </div>
   )
