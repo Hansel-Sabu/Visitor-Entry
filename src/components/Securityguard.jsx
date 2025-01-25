@@ -1,21 +1,11 @@
 import React from 'react'
+import NavbarHome from './NavbarHome'
 
 const Securityguard = () => {
   return (
     <div>
-      
-        
-        Login
-        AddDailyLog
-        ViewDailyLogs
-        EditDailyLogs
-        logOut
-
-
-
-
-
-
+      <NavbarHome />
+      Security Login Page
 
     </div>
   )

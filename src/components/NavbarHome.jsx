@@ -14,11 +14,8 @@ const NavbarHome = () => {
               <a class="nav-link active" aria-current="page" href="/">Home</a>
               <a class="nav-link" href="/a">Admin</a>
               <a class="nav-link" href="/s">Security Guards</a>
-              <a class="nav-link disabled" aria-disabled="true"></a>
             </div>
-            <form class="d-flex" role="search">
-              <button class="btn btn-outline-success me-2" type="submit">LogOut</button>
-            </form>
+            
           </div>
         </div>
       </nav>
