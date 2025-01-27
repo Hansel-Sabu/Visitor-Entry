@@ -8,7 +8,7 @@ const ViewDailyLogs = () => {
     const[data,changeData]=useState([])
 
     const fetchData=()=>{
-        axios.get("/api/admin/view-logs", {
+        axios.get( {
             headers: {
                 'Authorization': 'Bearer jwt_token'
             }
