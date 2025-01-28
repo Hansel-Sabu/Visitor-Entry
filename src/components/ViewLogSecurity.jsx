@@ -7,7 +7,9 @@ const ViewLogSecurity = () => {
     const [data, changeData] = useState([   ])
 
     const fetchData = () => {
-        axios.get("").then(
+        axios.get("", {}, {
+                    Headers: { Authorization: 'Bearer jwt_token' }
+                }).then(
             (response) => {
                 changeData(response.data)
             }
