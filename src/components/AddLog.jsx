@@ -19,7 +19,7 @@ const AddLog = () => {
 
         console.log(updatedInput)
 
-        axios.post("http://localhost:3000/addlog",updatedInput,{
+        axios.post("http://18.144.111.41:3000/api/security/add-log",updatedInput,{
             headers:{'token':token, "Content-Type": "application/json" }}
         ).then(
             (response)=>{
