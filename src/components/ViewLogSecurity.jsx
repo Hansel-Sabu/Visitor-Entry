@@ -7,7 +7,7 @@ const ViewLogSecurity = () => {
     const [data, changeData] = useState([   ])
 
     const fetchData = () => {
-        axios.get("", {}, {
+        axios.get("http://18.144.111.41:3000/api/admin/view-security", {}, {
                     Headers: { Authorization: 'Bearer jwt_token' }
                 }).then(
             (response) => {
