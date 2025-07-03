@@ -1,14 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import SecurityNavbar from './SecurityNavbar'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const ViewLogSecurity = () => {
+    const navigate=useNavigate()
+    useEffect(
+        ()=>{
+            console.log(sessionStorage.getItem("stoken"))
+            if (sessionStorage.getItem("stoken")==null) {
+                navigate("/s")
+            }
+        }
+    )
+
+
 
     const [data, changeData] = useState([   ])
 
     const fetchData = () => {
         axios.get("http://18.144.111.41:3000/api/security/view-logs", {
-                    Headers: { Authorization: 'Bearer jwt_token' }
+                    headers: { Authorization: 'Bearer stoken' }
                 }).then(
             (response) => {
                 changeData(response.data)
